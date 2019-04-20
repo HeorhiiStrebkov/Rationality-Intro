@@ -1,0 +1,102 @@
+body{
+	background-color: yellow;
+}
+.container{
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+}
+.textbox{
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+	margin-top: 100px;
+}
+.test{
+	margin-top: 50px;
+}
+.center{
+	margin-top: 50px;
+	text-align: center;		
+}
+.admin{	
+	font-size: 20px;
+	color: #000;
+	display: inline-block;		
+}
+
+.user{
+
+	margin-top: 30px;	
+	font-size: 20px;
+	color: #000;
+	display: inline-block;	
+	margin-bottom: 50px;		
+}
+.submit a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+ 	padding: 15px 35px;
+ 	display: inline;
+	font-size: 14px;
+	background-color: blue;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.submit1 a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+ 	padding: 15px 35px;
+ 	display: inline;
+	font-size: 14px;
+	background-color: blue;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.submit2 a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+ 	padding: 15px 35px;
+	font-size: 14px;
+	background-color: blue;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	
+}
+.submit1{
+	display: inline-block;
+}
+.submit2{
+	float: right;
+}
+.name{
+
+	margin-top: 30px;	
+	font-size: 20px;
+	color: #000;
+	display: inline-block;	
+	margin-bottom: 50px;
+}
+li{
+	margin-top: 20px;
+}
+.left__li{
+	width: 45%;
+	display: inline-block;
+	margin-right: 40px;
+}
+.right__li{
+	width: 45%;
+	float: right;
+}
+.text{	
+	margin-bottom: 50px;	
+	margin-top: 100px;
+		font-size: 25px;
+	color: #000;
+}

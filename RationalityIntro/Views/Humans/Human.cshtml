@@ -1,0 +1,56 @@
+﻿@model IEnumerable<RationalityIntro.Models.Human>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw5</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>Rationality Intro</title>
+</head>
+<body>
+    <div class="container">
+        <h3>ModelActId</h3>
+        <div class="textbox">
+            А теперь ответь на вопросы который никому не нужны и на твой результат не повлияют
+        </div>
+        <div class="test">
+            <div class="left__li">
+                @for (var i = 0; i < 10; i++)
+                {
+                    <input type="checkbox" name="option" +i> foreach (var h in Model)
+                    {
+                        <td><p>@h.Sex</p></td>
+                        <td><p>@h.Profession</p></td>
+                        <td><p>@h.SubProperty</p></td>
+                        <td></td>
+                    }<br>
+                }
+            </div>
+            <div class="right__li">
+                @for (var i = 10; i < 20; i++)
+                {
+                    <input type="checkbox" name="option" +i> foreach (var h in Model)
+                    {
+                        <td><p>@h.Sex</p></td>
+                        <td><p>@h.Profession</p></td>
+                        <td><p>@h.SubProperty</p></td>
+                        <td></td>
+                    }<br>
+
+                }
+            </div>
+        </div>
+        <div class="center">
+            <div class="submit">
+                <a href="conclusion.html">
+                    Вы Уверены?
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
