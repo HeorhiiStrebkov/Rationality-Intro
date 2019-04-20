@@ -1,0 +1,6 @@
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\bin\Debug\RationalityIntro.Web.Logic.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\bin\Debug\RationalityIntro.Web.Logic.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\obj\Debug\RationalityIntro.Web.Logic.csprojAssemblyReference.cache
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\obj\Debug\RationalityIntro.Web.Logic.csproj.CoreCompileInputs.cache
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\obj\Debug\RationalityIntro.Web.Logic.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web.Logic\obj\Debug\RationalityIntro.Web.Logic.pdb

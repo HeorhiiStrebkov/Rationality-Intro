@@ -1,0 +1,12 @@
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\RationalityIntro.Logic.dll
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\RationalityIntro.Logic.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\RationalityIntro.Data.dll
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\EntityFramework.dll
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\RationalityIntro.Data.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\RationalityIntro.Data.dll.config
+D:\RI\Rationality-Intro\RationalityIntro.Logic\bin\Debug\EntityFramework.xml
+D:\RI\Rationality-Intro\RationalityIntro.Logic\obj\Debug\RationalityIntro.Logic.csprojAssemblyReference.cache
+D:\RI\Rationality-Intro\RationalityIntro.Logic\obj\Debug\RationalityIntro.Logic.csproj.CoreCompileInputs.cache
+D:\RI\Rationality-Intro\RationalityIntro.Logic\obj\Debug\RationalityIntro.Logic.csproj.CopyComplete
+D:\RI\Rationality-Intro\RationalityIntro.Logic\obj\Debug\RationalityIntro.Logic.dll
+D:\RI\Rationality-Intro\RationalityIntro.Logic\obj\Debug\RationalityIntro.Logic.pdb
