@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RationalityIntro.Data.Repository
 {
-    class ActsRepository
+    public class ActRepository
     {
         public void AddAct(Act act)
         {

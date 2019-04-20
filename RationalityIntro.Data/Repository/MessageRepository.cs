@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RationalityIntro.Data.Repository
 {
-    class MessageRepository
+    public class MessageRepository
     {
         public void AddMessage(Message message)
         {
