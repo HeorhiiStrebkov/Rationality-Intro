@@ -1,0 +1,9 @@
+D:\RI\Rationality-Intro\RationalityIntro.SQL\bin\Debug\RationalityIntro.SQL.dacpac
+D:\RI\Rationality-Intro\RationalityIntro.SQL\bin\Debug\RationalityIntro.SQL.dll
+D:\RI\Rationality-Intro\RationalityIntro.SQL\bin\Debug\RationalityIntro.SQL.pdb
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\Model.xml
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\refactor.xml
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\postdeploy.sql
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\predeploy.sql
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\RationalityIntro.SQL.dll
+D:\RI\Rationality-Intro\RationalityIntro.SQL\obj\Debug\RationalityIntro.SQL.pdb
