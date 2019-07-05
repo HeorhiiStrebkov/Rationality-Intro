@@ -171,7 +171,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Act.cs" />
-    <Compile Include="Models\Human.cs" />
+    <Compile Include="Models\HumanViewModel.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
