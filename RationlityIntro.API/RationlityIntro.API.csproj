@@ -161,11 +161,18 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ActController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HumanController.cs" />
+    <Compile Include="Controllers\HumanViewController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Act.cs" />
+    <Compile Include="Models\Human.cs" />
+    <Compile Include="Models\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,10 +225,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\HumanView\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -253,6 +260,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RationalityIntro.Data\RationalityIntro.Data.csproj">
+      <Project>{B6C2713C-57C8-4F25-9421-32D976161623}</Project>
+      <Name>RationalityIntro.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RationalityIntro.Domain\RationalityIntro.Domain.csproj">
+      <Project>{7CFD3FD3-41DA-43DC-80E4-B2F247A49829}</Project>
+      <Name>RationalityIntro.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RationalityIntro.Logic\RationalityIntro.Logic.csproj">
       <Project>{ca359f4c-7dd9-4e44-bac8-abdceaac2627}</Project>
       <Name>RationalityIntro.Logic</Name>

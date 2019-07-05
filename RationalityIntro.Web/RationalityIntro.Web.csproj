@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -126,10 +132,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ActsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HumansController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ActViewModel.cs" />
+    <Compile Include="Models\HumanViewModel.cs" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Models\MessageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,12 +178,20 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Humans\Index.cshtml" />
+    <Content Include="Views\Humans\Stage2.cshtml" />
+    <Content Include="Views\Home\StartGame.cshtml" />
+    <Content Include="Views\Messages\Index.cshtml" />
+    <Content Include="Views\Humans\Add.cshtml" />
+    <Content Include="Views\Humans\Editing.cshtml" />
+    <Content Include="Views\Home\Paskal.cshtml" />
+    <Content Include="Views\Home\CoveringMultipleTheory.cshtml" />
+    <Content Include="Views\Home\UtilityEthics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Act\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -187,6 +207,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RationalityIntro.Data\RationalityIntro.Data.csproj">
+      <Project>{B6C2713C-57C8-4F25-9421-32D976161623}</Project>
+      <Name>RationalityIntro.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RationalityIntro.Logic\RationalityIntro.Logic.csproj">
+      <Project>{CA359F4C-7DD9-4E44-BAC8-ABDCEAAC2627}</Project>
+      <Name>RationalityIntro.Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RationalityIntro.Web.Logic\RationalityIntro.Web.Logic.csproj">
       <Project>{b586b5bd-700e-4003-87cb-bf194162bdf7}</Project>
       <Name>RationalityIntro.Web.Logic</Name>

@@ -80,3 +80,12 @@ D:\RI\Rationality-Intro\RationalityIntro.Web\obj\Debug\RationalityIntro.Web.cspr
 D:\RI\Rationality-Intro\RationalityIntro.Web\obj\Debug\RationalityIntro.Web.csproj.CopyComplete
 D:\RI\Rationality-Intro\RationalityIntro.Web\obj\Debug\RationalityIntro.Web.dll
 D:\RI\Rationality-Intro\RationalityIntro.Web\obj\Debug\RationalityIntro.Web.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\RationalityIntro.Data.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\RationalityIntro.Logic.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\EntityFramework.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\RationalityIntro.Data.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\RationalityIntro.Data.dll.config
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\RationalityIntro.Logic.pdb
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\EntityFramework.xml
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\EntityFramework.SqlServer.dll
+D:\RI\Rationality-Intro\RationalityIntro.Web\bin\EntityFramework.SqlServer.xml

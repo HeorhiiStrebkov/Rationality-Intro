@@ -50,7 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Repository\ActRepository.cs" />
+    <Compile Include="Repository\HumanRepository.cs" />
     <Compile Include="DataModels\Act.cs">
       <DependentUpon>EFModel.tt</DependentUpon>
     </Compile>
@@ -79,6 +80,7 @@
       <DependentUpon>EFModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\MessageRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="DataModels\EFModel.edmx">
@@ -87,7 +89,9 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="DataModels\EFModel.edmx.diagram">
       <DependentUpon>EFModel.edmx</DependentUpon>
     </None>
@@ -108,5 +112,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

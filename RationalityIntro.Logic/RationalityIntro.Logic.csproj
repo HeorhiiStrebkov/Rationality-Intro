@@ -41,8 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Dto\ActDto.cs" />
+    <Compile Include="Dto\HumanDto.cs" />
+    <Compile Include="Dto\MessageDto.cs" />
+    <Compile Include="Extensions\ActExtension.cs" />
+    <Compile Include="Extensions\HumanExtension.cs" />
+    <Compile Include="Extensions\MessageExtension.cs" />
+    <Compile Include="Services\ActService.cs" />
+    <Compile Include="Services\HumanService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MessageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RationalityIntro.Data\RationalityIntro.Data.csproj">
@@ -50,5 +58,6 @@
       <Name>RationalityIntro.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,18 +12,24 @@ namespace RationalityIntro.Web.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult StartGame()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
-        public ActionResult Contact()
+        public ActionResult About()
         {
-            ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        public ActionResult Paskal()
+        {
+            return View();
+        }
+        public ActionResult CoveringMultipleTheory()
+        {
+            return View();
+        }
+        public ActionResult UtilityEthics()
+        {
             return View();
         }
     }

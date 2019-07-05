@@ -11,33 +11,33 @@ using System.Threading.Tasks;
 
 namespace RationalityIntro.Logic.Services
 {
-        public interface IActService
-        {
-            ActDto GetActById(int Id);
+    public interface IActService
+    {
+        ActDto GetActById(int Id);
+        void Delete(int Id);
+        void Add(Act act);
+    }
+    public class ActService : IActService
+    {
+        private readonly ActRepository actRepository
+            = new ActRepository();
 
-            void Delete(int Id);
+        public void Add(Act act)
+        {
+            actRepository.AddAct(act);
         }
-        public class ActService : IActService
+
+        public void Delete(int Id)
         {
-            private readonly ActRepository actRepository
-                = new ActRepository();
+            actRepository.DeleteAct(Id);
+        }
 
-            public void Add(Act act)
-            {
-                actRepository.AddAct(act);
-            }
+        public ActDto GetActById(int Id)
+        {
+            var act = actRepository.GetActById(Id);
 
-            public void Delete(int Id)
-            {
-                actRepository.DeleteAct(Id);
-            }
-
-            public ActDto GetActById(int Id)
-            {
-                var act = actRepository.GetActById(Id);
-
-                return act.ToActDto();
-            }
+            return act.ToActDto();
         }
     }
+}
 
