@@ -94,3 +94,5 @@ D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Data.dll.config
 D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Domain.pdb
 D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Domain.dll.config
 D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.xml
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.SqlServer.dll
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.SqlServer.xml

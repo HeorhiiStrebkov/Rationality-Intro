@@ -140,6 +140,7 @@
     </Compile>
     <Compile Include="Models\ActViewModel.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Models\HumanViewModel.cs" />
     <Compile Include="Models\MessageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
