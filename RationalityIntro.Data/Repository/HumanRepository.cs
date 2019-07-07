@@ -31,17 +31,19 @@ namespace RationalityIntro.Data
 
         }
 
-        public void AddHuman(Human human, string sex, string profession, string subProperty) 
+        public int AddHuman(Human human) 
         {
             using (var context = new RationalityIntroDBEntities())
             {
-                human.Sex = sex;
-                human.Profession = profession;
-                human.SubProperty = subProperty;
+                var exists = context.Humen.Any(c => c.Id == human.Id);
+
+                if (exists)
+                    throw new ArgumentException("Not uniue"); 
 
                 context.Humen.Add(human);
                 context.SaveChanges();
-            }           
+                return human.Id;
+            }
         }
 
         public void DeleteHuman(int? Id)

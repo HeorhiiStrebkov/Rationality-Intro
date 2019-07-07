@@ -18,7 +18,7 @@ namespace RationalityIntro.Logic
 
         void Delete(int? Id);
 
-        void Add(Human human, string profession, string sex, string subProperty);
+        int Add(Human human);
         
     }
     public class HumanService : IHumanService
@@ -26,10 +26,19 @@ namespace RationalityIntro.Logic
         private readonly HumanRepository humanRepository
             = new HumanRepository();
 
-        public void Add(Human human, string sex, string profession,  string subProperty)
+        public void Add(Human human)
         {
- 
-            humanRepository.AddHuman(human, sex, profession,subProperty);           
+
+            var humanDomain = new Human
+            {
+                Id = human.Id,
+                Sex = human.Sex,
+                Profession = human.Profession,
+                SubProperty = human.SubProperty,
+                RelationsWithId = human.RelationsWithId
+            };
+
+            humanRepository.AddHuman(humanDomain);           
         }
 
         public void Delete(int? Id)
@@ -49,6 +58,21 @@ namespace RationalityIntro.Logic
             var humanList = humanRepository.GetListOfHumans();
 
             return humanList.Select(x => x.ToHumanDto()).ToList();
+        }
+
+        int IHumanService.Add(Human human)
+        {
+            var humanDomain = new Human
+            {
+                Id = human.Id,
+                Sex = human.Sex,
+                Profession = human.Profession,
+                SubProperty = human.SubProperty,
+                RelationsWithId = human.RelationsWithId
+            };
+
+            humanRepository.AddHuman(humanDomain);
+            return human.Id;
         }
     }
 }
