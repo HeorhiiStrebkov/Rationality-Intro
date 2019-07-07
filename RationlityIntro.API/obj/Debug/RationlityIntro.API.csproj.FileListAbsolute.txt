@@ -86,3 +86,13 @@ D:\RI\Rationality-Intro\RationlityIntro.API\obj\Debug\RationlityIntro.API.csproj
 D:\RI\Rationality-Intro\RationlityIntro.API\obj\Debug\RationlityIntro.API.csproj.CopyComplete
 D:\RI\Rationality-Intro\RationlityIntro.API\obj\Debug\RationlityIntro.API.dll
 D:\RI\Rationality-Intro\RationlityIntro.API\obj\Debug\RationlityIntro.API.pdb
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Data.dll
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Domain.dll
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.dll
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Data.pdb
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Data.dll.config
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Domain.pdb
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\RationalityIntro.Domain.dll.config
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.xml
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.SqlServer.dll
+D:\RI\Rationality-Intro\RationlityIntro.API\bin\EntityFramework.SqlServer.xml

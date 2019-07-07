@@ -2,6 +2,7 @@
 using RationalityIntro.Data.DataModels;
 using RationalityIntro.Data.Repository;
 using RationalityIntro.Logic.Dto;
+using RationalityIntro.Logic.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,11 @@ namespace RationalityIntro.Logic.Services
 {
     public interface IMessageService
     {
+
         MessageDto GetMessageById(int Id);
 
         void Delete(int Id);
-    }
+    } 
     public class MessageService : IMessageService
     {
         private readonly MessageRepository messageRepository
@@ -37,5 +39,6 @@ namespace RationalityIntro.Logic.Services
 
             return message.ToMessageDto();
         }
+
     }
 }

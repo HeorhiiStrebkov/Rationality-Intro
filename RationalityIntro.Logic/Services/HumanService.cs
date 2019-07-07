@@ -10,41 +10,69 @@ using System.Threading.Tasks;
 
 namespace RationalityIntro.Logic
 {
-        public interface IHumanService
+    public interface IHumanService
+    {
+        List<HumanDto> GetHumans();
+
+        HumanDto GetHumanById(int Id);
+
+        void Delete(int? Id);
+
+        int Add(Human human);
+        
+    }
+    public class HumanService : IHumanService
+    {
+        private readonly HumanRepository humanRepository
+            = new HumanRepository();
+
+        public void Add(Human human)
         {
-            List<HumanDto> GetHumans();
 
-            HumanDto GetHumanById(int Id);
+            var humanDomain = new Human
+            {
+                Id = human.Id,
+                Sex = human.Sex,
+                Profession = human.Profession,
+                SubProperty = human.SubProperty,
+                RelationsWithId = human.RelationsWithId
+            };
 
-            void Delete(int Id);
+            humanRepository.AddHuman(humanDomain);           
         }
-        public class HumanService : IHumanService
+
+        public void Delete(int? Id)
         {
-            private readonly HumanRepository humanRepository
-                = new HumanRepository();
+            humanRepository.DeleteHuman(Id);
+        }
+                
+        public HumanDto GetHumanById(int Id)
+        {
+            var human = humanRepository.GetHumanById(Id);
 
-            public void Add(Human human)
+            return human.ToHumanDto();
+        }
+
+        public List<HumanDto> GetHumans()
+        {
+            var humanList = humanRepository.GetListOfHumans();
+
+            return humanList.Select(x => x.ToHumanDto()).ToList();
+        }
+
+        int IHumanService.Add(Human human)
+        {
+            var humanDomain = new Human
             {
-                humanRepository.AddHuman(human);
-            }
+                Id = human.Id,
+                Sex = human.Sex,
+                Profession = human.Profession,
+                SubProperty = human.SubProperty,
+                RelationsWithId = human.RelationsWithId
+            };
 
-            public void Delete(int Id)
-            {
-                humanRepository.DeleteHuman(Id);
-            }
-
-            public HumanDto GetHumanById(int Id)
-            {
-                var human = humanRepository.GetHumanById(Id);
-
-                return human.ToHumanDto();
-            }
-
-            public List<HumanDto> GetHumans()
-            {
-                var humanList = humanRepository.GetListOfHumans();
-
-                return humanList.Select(x => x.ToHumanDto()).ToList();
-            }
+            humanRepository.AddHuman(humanDomain);
+            return human.Id;
         }
     }
+}
